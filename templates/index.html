@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Merge TailwindCSS into Flask app</title>
+    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="container mx-auto p-8">
+        <h1 class="text-xl font-bold mb-8">Line Sticker Downloader</h1>
+        <form action="/" method="POST" class="flex flex-col space-y-4">
+            <label for="url" class="font-semibold">URL:</label>
+            <input type="text" id="url" name="url" required class="border border-gray-300 rounded p-2">
+            <label for="name" class="font-semibold">Folder Name:</label>
+            <input type="text" id="name" name="name" required class="border border-gray-300 rounded p-2">
+            <input type="submit" value="Download Images" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">
+        </form>
+    </div>
+</body>
+</html>
